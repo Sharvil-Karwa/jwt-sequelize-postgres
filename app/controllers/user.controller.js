@@ -1,9 +1,9 @@
-exports.allAccess = (req, res) => {
-  res.status(200).send("Public Content.");
+exports.all = (req, res) => {
+  res.status(200).send("Visible to all");
 };
-exports.userBoard = (req, res) => {
-  res.status(200).send("User Content.");
+exports.user = (req, res) => {
+  res.status(200).send("Visible to users.");
 };
-exports.adminBoard = (req, res) => {
-  res.status(200).send("Admin Content.");
+exports.admin = (req, res) => {
+  res.status(200).send("Visible to admins only.");
 };
